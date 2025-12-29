@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Savannah Seeds - Diwali 15 Year Celebration</title>
+    <meta name="description" content="Savannah Seeds - 15 Year Celebration. Warm Diwali wishes for India's paddy agriculture community. Responsive festive one-pager." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+
+
+    <!-- SECTION 2: Video -->
+    <section id="video" class="section video" aria-labelledby="video-heading">
+        <h2 id="video-heading" class="section-title">A special Message from our CEO & MD - Mr. Ajai Rana</h2>
+        <div class="video-wrap">
+            <!-- Placeholder video, user to replace VIDEO_ID later -->
+            <div class="responsive-iframe">
+                <iframe id="promo-video" src="https://www.youtube.com/embed/0NRLz8n52JU?autoplay=1&mute=0&controls=1&playsinline=1&rel=0&enablejsapi=1" title="Paddy Agriculture Video" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                <div id="video-overlay" class="video-overlay" aria-hidden="true"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: Diwali Message -->
+    <section id="diwali" class="section diwali" aria-labelledby="diwali-heading">
+        <h2 id="diwali-heading" class="section-title">Happy New Year</h2>
+        <div class="diwali-content">
+            <div class="diya-row" aria-hidden="true">
+                <span class="diya" role="img" aria-label="Diya">🎊</span>
+                <span class="diya" role="img" aria-label="Diya">🎊</span>
+                <span class="diya" role="img" aria-label="Diya">🎊</span>
+            </div>
+            <p class="diwali-line">Celebrating 15 Years of Partnership and Prosperity</p>
+            <p class="diwali-line">Wishing Our Distributor Family a Bright and Beautiful Diwali</p>
+            <canvas id="fireworks" aria-hidden="true"></canvas>
+        </div>
+    </section>
+
+    <!-- SECTION 4: Wishes Textarea -->
+    <section id="wishes" class="section wishes" aria-labelledby="wishes-heading">
+        <h2 id="wishes-heading" class="section-title">Give your well wishes</h2>
+        <form id="wishes-form" class="wishes-form" novalidate>
+            <label for="wishesText" class="visually-hidden">Type your message (max 200 words)</label>
+            <textarea id="wishesText" name="wishesText" rows="6" placeholder="Leave your festive wishes or share a memorable moment from your journey with Savannah Seeds for Mr. Ajai Rana"></textarea>
+            <div class="wishes-meta">
+                <small id="wordCount">0 / 200 words</small>
+                <small id="wishesError" class="error" aria-live="polite"></small>
+            </div>
+        </form>
+    </section>
+
+    <!-- SECTION 5: User Details Form -->
+    <section id="details" class="section details" aria-labelledby="details-heading">
+        <h2 id="details-heading" class="section-title">Your Details</h2>
+        <form id="details-form" class="details-form" novalidate>
+            <div class="form-grid">
+                <div class="form-field">
+                    <label for="firmName">Firm name</label>
+                    <input type="text" id="firmName" name="firmName" placeholder="Enter firm name" required />
+                </div>
+                <div class="form-field">
+                    <label for="dealerName">Your name</label>
+                    <input type="text" id="dealerName" name="dealerName" placeholder="Enter dealer name" required />
+                </div>
+                <div class="form-field">
+                    <label for="mobileNumber">Mobile number</label>
+                    <input type="tel" id="mobileNumber" name="mobileNumber" inputmode="numeric" pattern="\\d{10}" maxlength="10" placeholder="10-digit mobile number" required />
+                    <small class="hint">Exactly 10 digits</small>
+                </div>
+                <div class="form-field" style="grid-column: 1 / -1;">
+                    <label for="firmAddress">Firm address</label>
+                    <textarea id="firmAddress" name="firmAddress" rows="3" placeholder="Enter firm address" required></textarea>
+                </div>
+            </div>
+            <button type="submit" class="btn primary" aria-label="Submit details">Submit</button>
+            <div id="formError" class="error" aria-live="polite"></div>
+        </form>
+    </section>
+
+    <footer class="site-footer">
+        <p>Copyright Savannah Seeds 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
